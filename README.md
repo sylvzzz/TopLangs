@@ -2,6 +2,7 @@
 
 A React component that displays the **top programming languages used in a GitHub user's repositories**, with bar visualization, statistics, and repository/language filtering.
 
+<img src="demo.jpeg" alt="Homepage" width="600"/>
 
 ## ✅ Requirements
 
