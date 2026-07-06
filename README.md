@@ -4,7 +4,7 @@ A React component that displays the **top programming languages used in a GitHub
 
 *i created a page for demonstration, if you just want to reuse the component copy the source code from <a href="https://github.com/sylvzzz/TopLangs/blob/main/src/components/TopLangs.jsx">src/components/TopLangs.jsx</a>.
 
-<img src="demo.png" alt="Homepage" width="600"/>
+<img src="demo.png" alt="Homepage" width="500"/>
 
 ## ✅ Requirements
 
