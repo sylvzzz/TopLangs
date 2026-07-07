@@ -2,7 +2,7 @@
 
 A React component that displays the **top programming languages used in a GitHub user's repositories**, with bar visualization, statistics, and repository/language filtering.
 
-#### Try it <a href="https://toplangs.diogolbsilva2006.workers.dev/">here</a>.
+### Try it <a href="https://toplangs.diogolbsilva2006.workers.dev/">here</a>.
 
 *i created a page for demonstration, if you just want to reuse the component copy the source code from <a href="https://github.com/sylvzzz/TopLangs/blob/main/src/components/TopLangs.jsx">src/components/TopLangs.jsx</a>.
 
