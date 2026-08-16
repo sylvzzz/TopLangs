@@ -1,5 +1,31 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-page: #c2c9db;
+  --color-ink: #15054f;
+  --color-ink-soft: #4c4a7a;
+  --color-surface: rgb(255 255 255 / 0.6);
+  --color-surface-2: rgb(255 255 255 / 0.45);
+  --color-line: rgb(21 5 79 / 0.12);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+:root {
+  color-scheme: light;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-page: #0b0f1e;
+  --color-ink: #e9ecff;
+  --color-ink-soft: #aab2d8;
+  --color-surface: rgb(255 255 255 / 0.05);
+  --color-surface-2: rgb(255 255 255 / 0.09);
+  --color-line: rgb(255 255 255 / 0.1);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,13 +33,15 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background: #c2c9db;
+  background: var(--color-page);
+  color: var(--color-ink);
   transform: scale(0.8);
+  transition: background-color 300ms var(--ease-out), color 300ms var(--ease-out);
 }
 
 .lang-bar {
-  animation: growBar 0.7s ease forwards;
   transform-origin: left;
+  animation: growBar 600ms var(--ease-out) forwards;
 }
 
 @keyframes growBar {
@@ -22,5 +50,19 @@ body {
   }
   to {
     transform: scaleX(1);
+  }
+}
+
+.theme-icon {
+  transition: opacity 250ms var(--ease-out), transform 250ms var(--ease-out);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lang-bar {
+    animation: none;
+  }
+
+  .theme-icon {
+    transition: opacity 150ms ease;
   }
 }
