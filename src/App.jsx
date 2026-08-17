@@ -35,7 +35,7 @@ export default function App() {
           <Github className="w-5 h-5" />
         </a>
         <a
-          href="https://diogo-lb-silva.vercel.app"
+          href="https://sylvzzz.dev"
           target="_blank"
           rel="noreferrer"
           aria-label="Website"
