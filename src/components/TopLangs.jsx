@@ -2,6 +2,8 @@ import { Github } from "lucide-react";
 import { useEffect, useState } from "react";
 
 
+const IGNORE = ['Hack', 'Makefile'];
+
 const TopLangs = ({ username = 'your_username', exclude = [], excludeRepos = [] }) => {
   const [state, setState] = useState({ loading: true, error: null, langs: [], repos: 0, total: 0 });
   const LANG_COLORS = [
@@ -46,7 +48,7 @@ const TopLangs = ({ username = 'your_username', exclude = [], excludeRepos = [] 
         }
 
         const sorted = Object.entries(totals)
-          .filter(([lang]) => !exclude.map(e => e.toLowerCase()).includes(lang.toLowerCase()))
+          .filter(([lang]) => ![...IGNORE, ...exclude].map(e => e.toLowerCase()).includes(lang.toLowerCase()))
           .sort((a, b) => b[1] - a[1])
           .slice(0, 8);
         const total = sorted.reduce((s, [, v]) => s + v, 0);
