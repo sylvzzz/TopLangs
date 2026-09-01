@@ -86,7 +86,6 @@ const TopLangs = ({ username = 'your_username', exclude = [], excludeRepos = [] 
               <>
                 <div className="grid grid-cols-3 gap-4 mb-8">
                   {[
-                    { label: 'Total Repos', value: repos },
                     { label: 'Total Languages', value: langs.length },
                     { label: 'Top language', value: langs[0]?.[0] ?? '—' },
                   ].map(({ label, value }) => (
