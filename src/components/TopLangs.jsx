@@ -84,7 +84,7 @@ const TopLangs = ({ username = 'your_username', exclude = [], excludeRepos = [] 
 
             {!loading && !error && (
               <>
-                <div className="grid grid-cols-3 gap-4 mb-8">
+                <div className="grid grid-cols-2 gap-4 mb-8">
                   {[
                     { label: 'Total Languages', value: langs.length },
                     { label: 'Top language', value: langs[0]?.[0] ?? '—' },
