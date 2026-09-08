@@ -1,4 +1,4 @@
-# TopLangs Component
+# TopLangs -- What do you code with?
 
 A React component that displays the **top programming languages used in a GitHub user's repositories**, with bar visualization, statistics, and repository/language filtering.
 
