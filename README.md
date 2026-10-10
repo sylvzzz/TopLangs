@@ -13,7 +13,7 @@ A React component that displays the **top programming languages used in a GitHub
 - **React 18+**
 - **lucide react** (Github icon component)
 - **Tailwind CSS** (for styling)
-- **Vite** (optional but recommended for environment variables)
+- **Vite**
 - **GitHub Token** (to increase API request limits) [get one here](https://github.com/settings/tokens)
 
 
