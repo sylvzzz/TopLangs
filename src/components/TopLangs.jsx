@@ -2,7 +2,7 @@ import { Github } from "lucide-react";
 import { useEffect, useState } from "react";
 
 
-const IGNORE = ['Hack', 'Makefile'];
+const IGNORE = ['Hack', 'Makefile', 'CSS'];
 
 const TopLangs = ({ username = 'your_username', exclude = [], excludeRepos = [] }) => {
   const [state, setState] = useState({ loading: true, error: null, langs: [], repos: 0, total: 0 });
